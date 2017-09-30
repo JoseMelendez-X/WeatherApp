@@ -3,12 +3,14 @@ PODS:
   - GoogleMaps/Base (2.4.0)
   - GooglePlaces (2.4.0):
     - GoogleMaps/Base (= 2.4.0)
+  - SVProgressHUD (2.2.1)
   - SwiftGifOrigin (1.6.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
   - GooglePlaces
+  - SVProgressHUD
   - SwiftGifOrigin
   - SwiftyJSON
 
@@ -16,9 +18,10 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
   GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: d394dccbb5b2b98bcee81cf8dd0b1eeb49cbd41a
+PODFILE CHECKSUM: 3212bf0e711f746153b94a672e5c7c5f7ec8b1ea
 
 COCOAPODS: 1.2.1

@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Weather-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,10 +25,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-I8-au1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="City" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-Bm-vlw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMz-Bj-L6A">
                                 <rect key="frame" x="0.0" y="73" width="375" height="38"/>
                                 <subviews>
@@ -112,6 +108,42 @@
                                     <constraint firstItem="hff-sG-q5m" firstAttribute="top" secondItem="GAH-8J-MHB" secondAttribute="top" constant="8" id="oHh-aK-XUM"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x99-Wg-sGA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sUd-Z6-baz">
+                                        <rect key="frame" x="38" y="21" width="299" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="state: CA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T61-nc-gT4">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="city: San Jose" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-LN-6nU">
+                                                <rect key="frame" x="110" y="0.0" width="111" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQp-HU-NwS">
+                                                <rect key="frame" x="251" y="0.0" width="48" height="30"/>
+                                                <state key="normal" title="Search">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rru-7E-Hjz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sUd-Z6-baz" firstAttribute="centerX" secondItem="x99-Wg-sGA" secondAttribute="centerX" id="4Zw-n6-QdD"/>
+                                    <constraint firstItem="sUd-Z6-baz" firstAttribute="centerY" secondItem="x99-Wg-sGA" secondAttribute="centerY" id="Dpk-pI-0OZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -119,27 +151,35 @@
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5GA-tj-NVk"/>
                             <constraint firstItem="zMz-Bj-L6A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6FT-uc-zC1"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="98k-Sr-g6b"/>
+                            <constraint firstItem="zMz-Bj-L6A" firstAttribute="top" secondItem="x99-Wg-sGA" secondAttribute="bottom" id="9Km-A9-C5r"/>
                             <constraint firstItem="6tM-P9-lY7" firstAttribute="top" secondItem="zMz-Bj-L6A" secondAttribute="bottom" constant="23" id="BfH-Ke-gyO"/>
-                            <constraint firstItem="zMz-Bj-L6A" firstAttribute="top" secondItem="Kic-Bm-vlw" secondAttribute="bottom" constant="17" id="CaP-oi-WXi"/>
-                            <constraint firstItem="Kic-Bm-vlw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L7c-5L-1fu"/>
+                            <constraint firstItem="x99-Wg-sGA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EcS-hP-oJp"/>
+                            <constraint firstItem="x99-Wg-sGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JBU-nI-7dt"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tjh-Cw-Yjv"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="top" secondItem="6tM-P9-lY7" secondAttribute="bottom" id="UCd-um-PO5"/>
                             <constraint firstItem="IOv-I8-au1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VyA-u9-aq7"/>
                             <constraint firstItem="6tM-P9-lY7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WUT-mt-qZL"/>
                             <constraint firstItem="iN8-JS-7jm" firstAttribute="leading" secondItem="6tM-P9-lY7" secondAttribute="trailing" constant="43" id="Whk-Hx-XM8"/>
-                            <constraint firstItem="Kic-Bm-vlw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wul-9T-0Ad"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xzf-0v-fUm"/>
                             <constraint firstItem="IOv-I8-au1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bkX-xw-sL9"/>
                             <constraint firstItem="IOv-I8-au1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cv4-ph-cdl"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dF6-dB-w7S"/>
-                            <constraint firstItem="Kic-Bm-vlw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dcF-jv-ZRp"/>
+                            <constraint firstItem="x99-Wg-sGA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="haI-TM-a1U"/>
                             <constraint firstItem="IOv-I8-au1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lUU-so-PkN"/>
                             <constraint firstItem="GAH-8J-MHB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w3x-IB-n4t"/>
                             <constraint firstItem="iN8-JS-7jm" firstAttribute="top" secondItem="zMz-Bj-L6A" secondAttribute="bottom" constant="23" id="zB8-iR-HB2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Weather" id="L2x-lf-Rjq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Rfr-Qp-Hlh">
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="BYZ-38-t0r" id="666-Wu-iJ3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="city" destination="BAz-LN-6nU" id="ajp-S0-X4s"/>
                         <outlet property="cityLabel" destination="zbl-Q2-0Rc" id="eR4-oM-ueL"/>
                         <outlet property="currentHumidityLabel" destination="wca-hw-LJQ" id="UtT-KX-51G"/>
                         <outlet property="currentTemperatureLabel" destination="E79-X1-jUz" id="Nmt-Yi-x4u"/>
@@ -147,12 +187,12 @@
                         <outlet property="currentWeatherLabel" destination="wa4-Xv-BXb" id="Xg1-qJ-FIn"/>
                         <outlet property="currentWindSpeedLabel" destination="vnx-Cq-0lY" id="MUG-Ud-4UX"/>
                         <outlet property="lastUpdatedLabel" destination="hff-sG-q5m" id="rbn-Lo-Wo1"/>
-                        <outlet property="searchBar" destination="Kic-Bm-vlw" id="TWN-xY-0a9"/>
+                        <outlet property="state" destination="T61-nc-gT4" id="LEO-mw-zsf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="476" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
