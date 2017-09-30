@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		590EEAED1F7F31AE00B46E31 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590EEAEC1F7F31AE00B46E31 /* TableViewController.swift */; };
-		590EEAF51F7F33CB00B46E31 /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590EEAF31F7F33CB00B46E31 /* CustomeTableViewCell.swift */; };
-		590EEAF61F7F33CB00B46E31 /* CustomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590EEAF41F7F33CB00B46E31 /* CustomeTableViewCell.xib */; };
 		590EEAF81F7F381C00B46E31 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590EEAF71F7F381C00B46E31 /* City.swift */; };
 		5951FA8E1F7C04D5008564C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951FA8D1F7C04D5008564C0 /* AppDelegate.swift */; };
 		5951FA901F7C04D5008564C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951FA8F1F7C04D5008564C0 /* ViewController.swift */; };
@@ -23,9 +20,6 @@
 /* Begin PBXFileReference section */
 		0C371AC32946BF8BF29576B0 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		2AD7AF1AF837D3DB55F2812D /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		590EEAEC1F7F31AE00B46E31 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		590EEAF31F7F33CB00B46E31 /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
-		590EEAF41F7F33CB00B46E31 /* CustomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomeTableViewCell.xib; sourceTree = "<group>"; };
 		590EEAF71F7F381C00B46E31 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		5951FA8A1F7C04D5008564C0 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5951FA8D1F7C04D5008564C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				5951FA8F1F7C04D5008564C0 /* ViewController.swift */,
-				590EEAEC1F7F31AE00B46E31 /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				5951FA911F7C04D5008564C0 /* Main.storyboard */,
-				590EEAF31F7F33CB00B46E31 /* CustomeTableViewCell.swift */,
-				590EEAF41F7F33CB00B46E31 /* CustomeTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				590EEAF61F7F33CB00B46E31 /* CustomeTableViewCell.xib in Resources */,
 				5951FA981F7C04D5008564C0 /* LaunchScreen.storyboard in Resources */,
 				5951FA951F7C04D5008564C0 /* Assets.xcassets in Resources */,
 				5951FA931F7C04D5008564C0 /* Main.storyboard in Resources */,
@@ -263,8 +253,6 @@
 				5951FA8E1F7C04D5008564C0 /* AppDelegate.swift in Sources */,
 				590EEAF81F7F381C00B46E31 /* City.swift in Sources */,
 				5951FAA61F7C2E70008564C0 /* WeatherDataModel.swift in Sources */,
-				590EEAED1F7F31AE00B46E31 /* TableViewController.swift in Sources */,
-				590EEAF51F7F33CB00B46E31 /* CustomeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
